@@ -1,0 +1,78 @@
+//HomeScreen
+
+HomeScreen (StatelessWidget)
+└── SingleChildScrollView
+    └── Column
+        ├── _buildWelcomeSection
+        │   └── Container
+        │       └── Stack
+        │           └── Positioned
+        │               └── Column
+        │                   ├── Text ("WELCOME TO MY DENTAL")
+        │                   ├── Text ("CARE CLINIC")
+        │                   └── Text ("Save Your Smile!")
+        │
+        ├── _buildAboutSection
+        │   └── Padding
+        │       └── Row
+        │           ├── Expanded
+        │           │   └── Column
+        │           │       ├── Text ("Experience World Class Dental Care")
+        │           │       ├── SizedBox
+        │           │       └── Text (Description)
+        │           ├── SizedBox
+        │           └── Container (Image)
+        │
+        ├── _buildServicesSection
+        │   └── Padding
+        │       └── Column
+        │           ├── Text ("Our Services")
+        │           ├── SizedBox
+        │           ├── Text (Description)
+        │           ├── SizedBox
+        │           └── _buildServicesGallery
+        │               └── SingleChildScrollView
+        │                   └── Row
+        │                       ├── _buildServiceCard ("General Dentistry")
+        │                       ├── SizedBox
+        │                       ├── _buildServiceCard ("Prosthodontics")
+        │                       ├── SizedBox
+        │                       ├── _buildServiceCard ("Orthodontics")
+        │                       ├── SizedBox
+        │                       └── _buildServiceCard ("Endodontics")
+        │
+        ├── _buildGallerySection
+        │   └── Padding
+        │       └── Column
+        │           ├── Text ("Gallery")
+        │           ├── SizedBox
+        │           └── _buildGallery
+        │               └── SingleChildScrollView
+        │                   └── Row
+        │                       ├── _buildGalleryCard
+        │                       └── SizedBox
+        │
+        └── _buildInformationSection
+            └── Container
+                └── Row
+                    ├── Expanded (Logo and slogan)
+                    │   └── Column
+                    │       ├── Container (Logo image)
+                    │       ├── SizedBox
+                    │       └── Text (Slogan)
+                    ├── Expanded (Services)
+                    │   └── Column
+                    │       ├── Text ("Our Services:")
+                    │       ├── SizedBox
+                    │       ├── Text ("General Dentistry")
+                    │       ├── Text ("Cosmetic Dentistry")
+                    │       ├── Text ("Orthodontics")
+                    │       └── Text ("Periodontics")
+                    └── Expanded (Contact Us)
+                        └── Column
+                            ├── Text ("Contact Us:")
+                            ├── SizedBox
+                            ├── Row (Location)
+                            ├── Row (Phone)
+                            ├── Row (Email)
+                            └── Row (Hours)
